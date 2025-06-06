@@ -13,8 +13,6 @@ An example of cool alerts:
 
 ______
 
-In the not too distant future you will be able to add your company name or a name at the bottom left.
-
 Cool Alerts does not yet have a closing or opening function, but you can add this.
 
 <br>
