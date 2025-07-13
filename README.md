@@ -1,151 +1,89 @@
-<b>Cool alerts:</b>
-  ______
+# Cool Alerts by DedeProgrammer
+### Hey everyone! I'm thrilled to share the enhanced version of Cool Alerts, my visually appealing alternative to the standard JavaScript ```alert()```. My goal was to make it even more user-friendly for you.
 
-<br>
-An example of cool alerts:
-<br>
-<br>              
-  <img src="https://github.com/user-attachments/assets/4089dc99-3921-4663-95cd-71b5ee1140c9" width="47%"/> 
-  <img src="https://github.com/user-attachments/assets/b82de229-3ca2-47ba-a387-9e967185ca1b" width="47%"/>
-<br>
-<br>
-<b>Cool alerts without extension(main-alert-style.css):</b>
+## 🚀 Getting Started
 
-______
+### Integrating Cool Alerts into your project is super straightforward!
 
-Cool Alerts does not yet have a closing or opening function, but you can add this.
+### 1. Setup
 
-<br>
-<br>
-  <img src="https://github.com/user-attachments/assets/d555a116-780a-4dc8-b05c-bfda85c83c19" width="47%"/> 
-  <img src="https://github.com/user-attachments/assets/759d6faa-cddd-404d-9b42-6e199b6ce442" width="47%"/>
-<br>
-<br>
-<b></b>
-Cool alerts with extension(alert-extension.css):
+### Just add the provided code to your HTML. Make sure you place the CSS link in your ```<head>``` section and the JavaScript script right before the closing ```</body>``` tag for optimal loading.
 
-______
+### 2. Code Integration
 
-<br>
-  <img src="https://github.com/user-attachments/assets/47a48e02-171a-4b06-a86d-9f92ec42ce60" width="77%"/>
-  <img src="https://github.com/user-attachments/assets/be603ceb-a23a-43f6-bbc7-c8c13d1e3c46" width="17%"/>
-<br>
-Colors:
-
-______
-
-```
-<red> → rgb(255, 72, 72)
-<orange> → orange
-<yellow> → rgb(255, 245, 104)
-<green> → rgb(36, 205, 36)
-<blue> → rgb(102, 102, 255)
-<violet> → violet
-
-<rainbow> → linear-gradient(100deg, rgba(255,72,72,1) -10%, rgba(255,165,0,1) 10%, rgba(255,245,104,1) 30%, rgba(63,205,36,1) 50%, rgba(102,102,255,1) 70%, rgba(238,130,238,1) 90%)
-
-<a-color> → var(--bnt--color)
-```
-
-Other extensions:
-
-______
-
-```
-<result> → double underlines a text
-<result-input> → underlines a text
-
-<computing-area>  → an area for calculations
-<code-area> → an area for coding examples
-
-.user-drag-from-alert-none → a class for non-transportable images
-.user-select-from-alert-none → a class for unselectable text
-```
-
-Example:
-
-<img src="https://github.com/user-attachments/assets/3b7ee328-824c-4667-9bbc-7ff1e29592ac" width="47%"/>
-<img src="https://github.com/user-attachments/assets/06c2067d-d079-4e64-be92-571c0d89995c" width="47%"/>
-<br>
-
-```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/main-alert-style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/alert-extension.css">
-
-<div class="background-alert">
-    <div class="alert-white user-select-from-alert-none">
-        <h1 class="title"><a-color>Cool alerts!</a-color></h1>
-        <div class="text-field">
-            <h2>I <a-color>hope</a-color> you can use <a-color><u><i>cool alerts</i></u></a-color> well.</h2>
-            <img src="https://raw.githubusercontent.com/DedeProgrammer/cool-alerts/main/cool-alerts/outdoor.jpg" style="border-radius: 20px; scale: 1.4;" class="user-drag-from-alert-none" alt="a picture test(outdoor.jpg)">
+```html
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/alertStyle.css">
+</head>
+<body>
+    <div id="backgroundAlert">
+        <div id="alertIntegration" data-companyname="myCompany" data-themecolor="rgb(108, 108, 236)">
+            <h1 class="header" id="title">Your Alert Title</h1>
+            <div id="pageContent"></div>
+            <button class="bnt footer" onclick="triggerAlert()">OK</button>
         </div>
-        <a class="bnt">Ok</a>
-    </div> 
-<div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/alertScript.js"></script>
+</body>
 ```
 
-<b>functions:</b>
-______
+### 3. Done!
 
-light dark mode ✓
-user-friendly ✓
-100% responsive ×
-you can use it for your projects ✓
-add another font ✓
+### Once you've integrated this code, you're all set to start using its features.
 
+## ✨ Features & Customization
+### I've packed Cool Alerts with various CSS attributes to boost your productivity and make designing your notifications a breeze.
+## 🎨 Color Attributes for Content (```<div id="pageContent">```)
+### I've included some handy predefined colors you can use directly to quickly style your alerts:
 
-<b>How to install:<b> 
+- ```red```
 
-______
+- ```orange```
 
-You can simply copy the basic HTML structure, i.e. the code in the image above, and paste it into your page.
-You can easily integrate the main design without extension https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/main-alert-style.css into your project.
-The one with extension looks like this https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/alert-extension.css.
+- ```yellow```
 
-<br>
-<br>
-  <img src="https://github.com/user-attachments/assets/9d6c7d52-0103-4037-aac3-e91fd0088317" width="40%"/> 
-    <img src="https://github.com/user-attachments/assets/c73d7ec9-0926-41f3-8b75-b0e5a250f83e" width="54%"/>
-<br>
-<br>
-  
-______
-  
-You can integrate both directly into your file with a link. 
-In addition, the extension is not absolutely necessary.
+- ```green```
 
-You can also simply copy the code and run it locally on your device. You can also enter your company name there.
-  
-______
+- ```blue```
 
-<br>
-  <img src="https://github.com/user-attachments/assets/a48cd94d-0a32-44d8-8d88-e925cfe2ad80" width="70%"/>
-<br>
-<br>
+- ```violet```
 
-<b>Code:</b>
+- ```themecolor (uses your custom defined theme color)```
 
-______
+- ```rainbow (a fun, vibrant option!)```
 
-<br>
+## 📝 Additional Attributes for Content (```<div id="pageContent">```)
 
+- ```result```: Double underlines your text.
+
+- ```result-input```: Single underlines your text.
+
+- ```betterText```: Makes your text responsive for different screen sizes.
+
+- ```computing-area```: Creates a free-form writing area within the alert.
+
+- ```code-area```: Generates a dedicated container perfect for displaying code snippets.
+
+### ⚙️ Custom Adjustments
+### Want to make it truly yours? Here's how to fine-tune your alerts:
+
+## 
+- Custom Main Color ```data-themecolor```: Define your own main theme color by changing the ```data-themecolor``` attribute's value within the ```#alertIntegration``` element.
+```html
+<div id="alertIntegration" data-companyname="myCompany" data-themecolor="rgb(108, 108, 236)">
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/main-alert-style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DedeProgrammer/cool-alerts@main/cool-alerts/alert-extension.css">
-```
+- Company Name ```data-companyname```: Easily customize your company name by updating the ```data-companyname``` attribute in the same ```#alertIntegration``` element.
+##
+### ▶️ Opening & Closing Alerts
+### You can open and close your custom alerts in your projects using the simple JavaScript function ```triggerAlert()```. Just call it whenever you need your alert to appear or disappear!
 
-<br>
+### Feedback and Support
+### If you run into any issues, spot a bug, or have suggestions for enhancements, please don't hesitate to let me know. Your feedback is incredibly important to me.
 
-```
-    <div class="background-alert">
-        <div class="alert-white">
-            <h1 class="title">Title</h1>
-            <div class="text-field">
-                <h2>Text</h2>
-            </div>
-            <a class="bnt">Ok</a>
-        </div> 
-    <div>
-```
+### For any comments or ideas, just reach out to me via email. You'll find my contact details in my profile.
 
-Peace, I'm out. Bye, hopefully see you soon!🥳😎
+
+
+
+

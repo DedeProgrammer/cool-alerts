@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main-alert-style.css">
-    <link rel="stylesheet" href="alert-extension.css"> <!--  The alert-extension.css extension is not absolutely necessary. -->
+    <link rel="stylesheet" href="alertStyle.css">
 </head>
 <body>
-    <div class="background-alert">
-        <div class="alert-white">
-            <h1 class="title">Title</h1>
-            <div class="text-field">
-                <h2>Text</h2>
-            </div>
-            <a class="bnt">Ok</a>
-        </div> 
-    <div>
+    <div id="backgroundAlert">
+        <div id="alertIntegration" data-companyname="myCompany" data-themecolor="rgb(108, 108, 236)">
+            <h1 class="header" id="title">Title</h1>
+            <div id="pageContent"><!--Here comes the content.--></div>
+            <button class="bnt footer" onclick="triggerAlert()">Ok</button>
+        <div>
+        <script src="alertScript.js"></script>
 </body>
 </html>

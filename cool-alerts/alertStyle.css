@@ -1,0 +1,287 @@
+:root {
+    --text-color: rgb(108, 108, 236);
+    --main-color: light-dark(white, rgba(25, 26, 41, 0.947));
+    color-scheme: dark light;
+}
+
+#backgroundAlert {
+    display: none;
+    filter: drop-shadow(75%);
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.308);
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    height: 100vh;
+    position: fixed;
+    z-index: 7000;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#backgroundAlert .header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    padding: 0.7em 1em;
+    font-size: clamp(0.4rem, 4vh + .5rem, 7rem);
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+#backgroundAlert #pageContent {
+    position: absolute;
+    word-break: normal;
+    padding: 0px 20px;
+    overflow: auto;
+    top: 10vh;
+    bottom: 10vh;
+    left: 2.4em;
+    right: 2em;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    &>h1,h2,h3,h4,h5,h6,p {
+        margin-top: -0.2em;
+    }
+}
+
+#backgroundAlert .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: clamp(1rem, 2vh + .5rem, 7rem);
+}
+
+#backgroundAlert #alertIntegration {
+    position: relative;
+    background-color: color-mix(in hsl, var(--main-color) 90%, transparent);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 1.7em;
+    width: 44em;
+    height: 20em;
+    display: block;
+    padding: 12px 30px;
+    margin: auto;
+    overflow: hidden;
+    &::before {
+        content: var(--company-name);
+        position: fixed;
+        padding: 0px 4px 0px 20px;
+        border-radius: 20px;
+        bottom: 20px;
+        left: 20px;   
+        color: var(--text-color);
+        background-color: color-mix(in hsl, var(--main-color) 90%, transparent);
+        z-index: 5000000;
+    }
+}
+
+#backgroundAlert .bnt {
+    display: block;
+    text-align: center;
+    padding: 12px 77px;
+    background-color: var(--text-color);
+    color: var(--main-color);
+    cursor: pointer;
+    transition: 0.05s ease-in-out;
+    outline: none;
+    border: none;
+    &:hover {
+        background-color: color-mix(in hsl, var(--text-color) 50%, transparent);
+    }
+    &:active {
+        transform: translateY(0.5em);
+    }
+}
+
+#backgroundAlert input {
+    outline: none;
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: var(--text-color);
+    &::placeholder {
+        color: var(--light-color);
+    }
+    &:focus {
+        outline-offset: 2px;
+        offset: 2px solid var(--text-color);
+    }
+}
+
+#backgroundAlert [red] {
+    color: rgb(255, 72, 72);
+}
+
+#backgroundAlert [orange] {
+    color: orange;
+}
+
+#backgroundAlert [yellow] {
+    color: rgb(255, 245, 104);
+}
+
+#backgroundAlert [green] {
+    color: rgb(36, 205, 36);
+}
+
+#backgroundAlert [blue] {
+    color: rgb(102, 102, 255);
+}
+
+#backgroundAlert [violet] {
+    color: violet;
+}
+
+#backgroundAlert [themecolor] {
+    color: var(--text-color);
+}
+
+#backgroundAlert [rainbow] {
+    animation: rainbowAnimation 7s infinite linear;
+}
+
+#backgroundAlert #pageContent [result]{
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 224, 121);
+    text-decoration-style: double;
+    text-decoration-thickness: 5px;
+}
+
+#backgroundAlert [betterText] {
+    font-size: clamp(1rem, 2vh + .5rem, 7rem);
+}
+
+#backgroundAlert #pageContent [result-input] {
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 218, 97);
+    text-decoration-thickness: 5px;
+}
+
+#backgroundAlert #pageContent [computing-area] {
+    border: 2px solid var(--text-color);
+    border-radius: 27px;
+    border-left: 7px solid var(--text-color);
+    border-bottom-left-radius: 27px;
+    border-top-left-radius: 27px;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+    margin: 12px;
+    padding: 24px;
+    display: flex;
+    z-index: 7;
+    padding-left: 2.5em;
+}
+
+#backgroundAlert #pageContent [computing-area]::before {
+    content: "example:";
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 20px;
+    margin: 4px;
+    margin-left: 7px;
+    z-index: 10;
+    font-size: 0.7em;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: var(--text-color);
+}
+
+#backgroundAlert #pageContent [code-area] {
+    border: 2px solid var(--text-color);
+    border-radius: 27px;
+    border-left: 7px solid var(--text-color);
+    border-bottom-left-radius: 27px;
+    border-top-left-radius: 27px;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+    margin: 12px;
+    padding: 24px;
+    display: flex;
+    z-index: 7;
+    padding-left: 2.5em;
+}
+
+#backgroundAlert #pageContent [code-area]::before {
+    content: "code:";
+    color: aliceblue;
+    padding: 2px;
+    border-radius: 20px;
+    margin: 4px;
+    margin-left: 7px;
+    z-index: 10;
+    font-size: 0.7em;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: var(--text-color);
+}
+
+@keyframes rainbowAnimation {
+    0% {
+        color: rgba(238,130,238,1);
+    }
+    15% {
+        color: rgba(255,72,72,1);
+    }
+    30% {
+        color: rgba(255,165,0,1);
+    }
+    50% {
+        color: rgba(255,245,104,1);
+    }
+    65% {
+        color: rgba(63,205,36,1);
+    }
+    85% {
+        color: rgba(102,102,255,1);
+    }
+    100% {
+        color: rgba(238,130,238,1);
+    }
+}
+
+#backgroundAlert::selection {
+    color: color-mix(in hsl, var(--text-color) 40%, transparent);
+    background-color: color-mix(in hsl, var(--text-color) 10%, transparent);
+}
+
+@media only screen and (max-width: 900px) {
+    #backgroundAlert #alertIntegration {
+        width: 77%;
+        height: 92%;
+    }
+
+    #backgroundAlert #alertIntegration::before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #backgroundAlert #alertIntegration {
+        width: 77%;
+        height: 92%;
+    }
+
+    #backgroundAlert #alertIntegration::before {
+        display: none;
+    }
+}
+
+/* Made by Dennis and on Github https://github.com/DedeProgrammer */
