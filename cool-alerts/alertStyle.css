@@ -95,7 +95,6 @@
     color: var(--main-color);
     cursor: pointer;
     transition: 0.05s ease-in-out;
-    outline: none;
     border: none;
     &:hover {
         background-color: color-mix(in hsl, var(--text-color) 50%, transparent);
